@@ -1,6 +1,10 @@
+from Graphics import *
 class Engine(object):
-    def __init__(self, x, y, size, win):
+    def __init__(self, x, radius, size, win):
         self.x = x
-        self.y = y
+        self.radius = radius
         self.size = size
-        self.buildEngine(x, y, size, win)
+        self.buildEngine(x, radius, size, win)
+
+    def buildEngine(self, x, radius, size, win):
+        innerShell = Circle(Point(500,325))
