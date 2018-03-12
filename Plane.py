@@ -27,13 +27,17 @@ class Wings(object):
         wingP2.draw(win)
         wingP2.setOutline(self.color)
         wingP2.setFill(self.color)
+        wing2p1 = Rectangle(Point(950, 325), Point(600, 350))
+        wingTip = Arc(Point(975, 325), Point(950, 350), 90, 170)
+        wingTip.draw(win)
+        wing2p1.draw(win)
 
-class Engine(object):
-    def __init__(self):
-        self.color = color
-
-    def buildEngine(self):
-        
+# class Engine(object):
+#     def __init__(self, size):
+#         self.size = size
+#
+#     def buildEngine(self):
+#         base = RoundedRectangle(Point(34))
 class Plane(object):
     def __init__(self,win):
         fuselage = Fuselage("green")
