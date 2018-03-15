@@ -1,8 +1,8 @@
 from graphics import *
 
-"""The important bit"""
 class Engine(object):
-    def __init__(self, size,win):
+    """Creates the engine. This is mainly for prop to use."""
+    def __init__(self, size, win):
         self.size = size
         self.buildBase(win)
         self.buildCowling(win)

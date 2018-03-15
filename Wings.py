@@ -1,6 +1,7 @@
 from graphics import *
 
 class Wings(object):
+    """Allows the plane to fly."""
     def __init__(self,color,win):
         self.color = color
         self.buildWings(win)

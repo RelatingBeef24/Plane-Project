@@ -1,5 +1,7 @@
 from graphics import *
+
 class Fuselage(object):
+    """Creates the body of the plane."""
     def __init__(self, color,win):
         self.color = color
         self.buildFuselage(win)
