@@ -8,7 +8,7 @@ class Plane(object):
         fuselage = Fuselage(color_rgb(199,204,203),win)
         wing = Wings("grey",win)
         #engine = Engine(0,win) #Don't worry about this. Unhashtag this to test engine by itself
-        prop = Prop(win)
+        prop = Prop(win,0) #Size is changable through here
 
 
 def main():
